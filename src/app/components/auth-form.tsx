@@ -4,6 +4,7 @@ import { Formik, Form } from 'formik';
 import React from 'react';
 import InputField from './input-field';
 import { signIn } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 
 export type AuthFormValues = {
   name: string;
@@ -22,6 +23,10 @@ export interface AuthFormProps {
 }
 
 export default function AuthForm({ onSubmit }: AuthFormProps) {
+
+  const route = useRouter()
+
+
   const handleSubmit = (values: AuthFormValues) => {
     console.log(values);
   };
@@ -58,19 +63,20 @@ export default function AuthForm({ onSubmit }: AuthFormProps) {
             <p className="mb-0.5 text-xl text-center uppercase">Or</p>
             <button
               className="py-2.5 px-5 bg-gray-900 text-zinc-50 text-base text-center font-medium rounded"
-              onClick={() => signIn('google')}
+              onClick={() => signIn('google', { callbackUrl: '/home' })}
             >
               Continue via Google
             </button>
             <button
               className="py-2.5 px-5 bg-gray-900 text-zinc-50 text-base text-center font-medium rounded"
-              onClick={()=>signIn("github")}
+              onClick={() => signIn('github', { callbackUrl: '/home' })}
             >
               Continue via GitHub
             </button>
           </Form>
         </Formik>
       </div>
+      <button></button>
     </>
   );
 }
