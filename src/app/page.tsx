@@ -2,6 +2,7 @@ import React from 'react';
 import AuthForm from './components/auth-form';
 import Header from './components/header';
 import StatusBar from './components/status-bar';
+import Announsments from './components/announsments';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         </h2>
         <p className="font-semibold">Now you can use Tipaw for 100% 🎉</p>
       </StatusBar>
+      <Announsments/>
     </main>
   );
 }
