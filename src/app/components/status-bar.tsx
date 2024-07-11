@@ -9,10 +9,10 @@ export default function StatusBar({ children }: StatusBarProps) {
   return (
     <>
       <div className="container m-auto mt-10 py-6 px-10">
-        <div className="flex justify-between bg-white border-b border-gray-300 py-6 px-10 rounded-md">
+        <div className="flex flex-col lg:flex-row gap-10 justify-between bg-white border-b border-gray-300 py-6 px-10 rounded-md">
           <div className="flex flex-col gap-3">{children}</div>
-          <div className="flex flex-col justify-between">
-            <div className="flex justify-between">
+          <div className="flex flex-col gap-7">
+            <div className="flex flex-col justify-between">
               <p className="font-bold">Profile compleated</p>
               <p className="text-emerald-500 font-bold">100%</p>
             </div>
