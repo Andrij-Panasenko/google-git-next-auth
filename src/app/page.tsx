@@ -7,15 +7,7 @@ import Announsments from './components/announsments';
 export default function Home() {
   return (
     <main>
-      {/* <AuthForm /> */}
-      <Header>My Tipaw</Header>
-      <StatusBar>
-        <h2 className="font-semibold text-lg text-teal-400">
-          You successfully compleated your profile at Tipaw
-        </h2>
-        <p className="font-semibold">Now you can use Tipaw for 100% 🎉</p>
-      </StatusBar>
-      <Announsments/>
+      <AuthForm />
     </main>
   );
 }
