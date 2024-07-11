@@ -26,8 +26,8 @@ export default function StatusBar({ children }: StatusBarProps) {
           </div>
         </div>
         <div className="bg-gray-100 py-12 px-8">
-          <ul className="flex gap-10">
-            <li className=" rounded-md flex-grow bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
+          <ul className="grid md:grid-cols-2 lg:grid-cols-4  gap-10">
+            <li className=" w-fullrounded-md bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
               <Image
                 width={16}
                 height={16}
@@ -37,7 +37,7 @@ export default function StatusBar({ children }: StatusBarProps) {
               <h3 className="font-bold">Verification</h3>
               <p className="text-gray-600">You verifyed your account</p>
             </li>
-            <li className=" rounded-md flex-grow bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
+            <li className=" w-full rounded-md bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
               <Image
                 width={16}
                 height={16}
@@ -47,7 +47,7 @@ export default function StatusBar({ children }: StatusBarProps) {
               <h3 className="font-bold">Profile picture</h3>
               <p className="text-gray-600">You added profile picture</p>
             </li>
-            <li className=" rounded-md flex-grow bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
+            <li className=" w-full rounded-md bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
               <Image
                 width={16}
                 height={16}
@@ -57,7 +57,7 @@ export default function StatusBar({ children }: StatusBarProps) {
               <h3 className="font-bold">Parents</h3>
               <p className="text-gray-600">Ypu added the parents</p>
             </li>
-            <li className=" rounded-md flex-grow bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
+            <li className=" w-full rounded-md bg-white space-y-5 p-6 shadow-lg shadow-gray-300/50">
               <Image
                 width={16}
                 height={16}
