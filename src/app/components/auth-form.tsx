@@ -4,7 +4,6 @@ import { Formik, Form } from 'formik';
 import React from 'react';
 import InputField from './input-field';
 import { signIn } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
 
 export type AuthFormValues = {
   name: string;
@@ -23,10 +22,6 @@ export interface AuthFormProps {
 }
 
 export default function AuthForm({ onSubmit }: AuthFormProps) {
-
-  const route = useRouter()
-
-
   const handleSubmit = (values: AuthFormValues) => {
     console.log(values);
   };
