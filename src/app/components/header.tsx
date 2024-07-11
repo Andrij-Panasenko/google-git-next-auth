@@ -7,8 +7,8 @@ export interface HeaderProps {
 
 export default function Header({ children }: HeaderProps) {
   return (
-    <>
-      <header className=" container m-auto flex items-center gap-5 py-6	px-10 border-b border-l border-r border-gray-300">
+    <div className="border-b border-gray-300">
+      <header className=" container m-auto flex items-center gap-5 py-6	px-10">
         <h1 className="flex-1 text-3xl font-semibold text-gray-900">
           {children}
         </h1>
@@ -24,6 +24,6 @@ export default function Header({ children }: HeaderProps) {
           <p className="text-base	font-semibold text-gray-900">John Smith</p>
         </div>
       </header>
-    </>
+    </div>
   );
 }
